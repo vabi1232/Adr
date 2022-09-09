@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter feedback details to send to the development"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:height="40dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edFullname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:height="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:id="@+id/edEmail"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:height="50dp"
+        android:layout_marginTop="10dp">
+    </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:height="40dp"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:hint="Description"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:id="@+id/edDes"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ck"
+        android:text="Would you like an email response?"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSend"
+        android:text="Send Feedback"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
